@@ -1,0 +1,335 @@
+/* =================== Font =================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Waterfall&display=swap");
+
+/* =================== Style =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+
+/* ========== form part ==============  */
+.form {
+  height: 100vh;
+  width: 100%;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background: #1a2980; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26d0ce, #1a2980);
+  background: linear-gradient(to right, #26d0ce, #1a2980);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(1100px, 90%);
+  height: 88vh;
+  padding-top: 3rem;
+  /* border: 1px solid red; */
+}
+.form .mainContainer .formContainer {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+  /* border: 1px saddlebrown solid; */
+}
+.form .mainContainer .formContainer .title {
+  /* height: 7vh; */
+  text-align: center;
+}
+.form .mainContainer .formContainer .title h2 {
+  margin: 25px 0 0 0;
+}
+.form .mainContainer .formContainer .form--fields {
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 25px;
+}
+.form .mainContainer .formContainer .form--fields .name .container {
+  position: relative;
+  margin: 12px;
+  width: 45%;
+  /* border: 2px solid red; */
+}
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .name
+  .container
+  .container__input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .name
+  .container
+  .container__input:not(:placeholder-shown)
+  + .container__label {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.904);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 1px 6px;
+  transform: translate(0, -80%);
+  opacity: 1;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-transform: translate(0, -80%);
+  -moz-transform: translate(0, -80%);
+  -ms-transform: translate(0, -80%);
+  -o-transform: translate(0, -80%);
+}
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .name
+  .container
+  .container__label {
+  /* Position the label */
+  left: 8px;
+  position: absolute;
+  top: 0;
+  /* font-size: 2rem; */
+  /* Hide it by default */
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.form .mainContainer .formContainer .form--fields .name {
+  display: flex;
+  justify-content: center;
+}
+#logo-input {
+  margin-top: 40px;
+}
+
+.form .mainContainer .imageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+  /* border: 1px rgb(252, 188, 143) solid; */
+}
+
+/*===========  register btn =========== */
+
+.form .mainContainer .formContainer .form--fields .register--btn {
+  width: 100%;
+  /* border: 1px solid red ; */
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.form .mainContainer .formContainer .form--fields .register--btn .fancy {
+  background-color: transparent;
+  border: 2px solid #629f69;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #629f69;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 0.7rem 1.3rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: #017848;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.form .mainContainer .formContainer .form--fields .register--btn .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #017848;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy
+  .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: transparent;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy
+  .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #629f69;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy
+  .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #629f69;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.form .mainContainer .formContainer .form--fields .register--btn .fancy:hover {
+  color: white;
+  background: white;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy:hover::before {
+  width: 0.9375rem;
+  background: #017848;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy:hover
+  .text {
+  color: #017848;
+  padding-left: 1.5em;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy:hover
+  .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.form
+  .mainContainer
+  .formContainer
+  .form--fields
+  .register--btn
+  .fancy:hover
+  .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
+/* ========== form page img section   ==========  */
+.form .mainContainer .imageContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+.form .mainContainer .imageContainer .img {
+  padding: 30px;
+}
